@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB1BCCDF232C6D4400F271CE /* MTCapsuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D78C232B665100B8A167 /* MTCapsuleView.m */; };
+		EB1BCCE0232C6D4400F271CE /* MTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DBE232A8BBF00286645 /* MTCircleView.m */; };
+		EB1BCCE1232C6D4400F271CE /* MTComplexRoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D794232B702100B8A167 /* MTComplexRoundedRectView.m */; };
+		EB1BCCE2232C6D4400F271CE /* MTEllipseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D780232B4CDF00B8A167 /* MTEllipseView.m */; };
+		EB1BCCE3232C6D4400F271CE /* MTMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DC8232A932000286645 /* MTMaskView.m */; };
+		EB1BCCE4232C6D4400F271CE /* MTRoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DC2232A8EAA00286645 /* MTRoundedRectView.m */; };
+		EB1BCCE5232C6D4400F271CE /* MTCapsuleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D790232B689F00B8A167 /* MTCapsuleImageView.m */; };
+		EB1BCCE6232C6D4400F271CE /* MTCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DB7232A7D7800286645 /* MTCircleImageView.m */; };
+		EB1BCCE7232C6D4400F271CE /* MTComplexRoundedRectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D799232B90C600B8A167 /* MTComplexRoundedRectImageView.m */; };
+		EB1BCCE8232C6D4400F271CE /* MTEllipseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D784232B4ED100B8A167 /* MTEllipseImageView.m */; };
+		EB1BCCE9232C6D4400F271CE /* MTMaskImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */; };
+		EB1BCCEA232C6D4400F271CE /* MTRoundedRectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DBB232A872400286645 /* MTRoundedRectImageView.m */; };
+		EB1BCCEB232C6D4400F271CE /* MTProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D77C232B2D0300B8A167 /* MTProcessingImageView.m */; };
+		EB1BCCEC232C6D4400F271CE /* MTMaskProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7B4232BD46F00B8A167 /* MTMaskProcessingImageView.m */; };
+		EB1BCCED232C6D4400F271CE /* MTCapsuleProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A4232B9B6500B8A167 /* MTCapsuleProcessingImageView.m */; };
+		EB1BCCEE232C6D4400F271CE /* MTCircleProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A0232B97D600B8A167 /* MTCircleProcessingImageView.m */; };
+		EB1BCCEF232C6D4400F271CE /* MTComplexRoundedRectProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7B0232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m */; };
+		EB1BCCF0232C6D4400F271CE /* MTEllipseProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A8232B9B9B00B8A167 /* MTEllipseProcessingImageView.m */; };
+		EB1BCCF1232C6D4400F271CE /* MTRoundedRectProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7AC232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m */; };
+		EB8A1418232C75CD00DA47D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D93232A7CBF00286645 /* ViewController.m */; };
+		EB8A141B232C76BF00DA47D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8A141A232C76BF00DA47D4 /* Main.storyboard */; };
+		EB8A141D232C76DE00DA47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8A141C232C76DE00DA47D4 /* LaunchScreen.storyboard */; };
+		EB8A141E232C76E100DA47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1D80C232C55B200B8A167 /* LaunchScreen.storyboard */; };
+		EBE1D777232B1F3100B8A167 /* MTMaskImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D778232B1F3100B8A167 /* MTMaskImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */; };
+		EBE1D77A232B252D00B8A167 /* MTMaskable.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D779232B24D200B8A167 /* MTMaskable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D77D232B2D0300B8A167 /* MTProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D77B232B2D0300B8A167 /* MTProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D77E232B2D0300B8A167 /* MTProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D77C232B2D0300B8A167 /* MTProcessingImageView.m */; };
+		EBE1D781232B4CDF00B8A167 /* MTEllipseView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D77F232B4CDF00B8A167 /* MTEllipseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D782232B4CDF00B8A167 /* MTEllipseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D780232B4CDF00B8A167 /* MTEllipseView.m */; };
+		EBE1D785232B4ED100B8A167 /* MTEllipseImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D783232B4ED100B8A167 /* MTEllipseImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D786232B4ED100B8A167 /* MTEllipseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D784232B4ED100B8A167 /* MTEllipseImageView.m */; };
+		EBE1D789232B54EF00B8A167 /* CGPath+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D787232B54EF00B8A167 /* CGPath+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D78A232B54EF00B8A167 /* CGPath+Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D788232B54EF00B8A167 /* CGPath+Utils.c */; };
+		EBE1D78D232B665100B8A167 /* MTCapsuleView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D78B232B665100B8A167 /* MTCapsuleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D78E232B665100B8A167 /* MTCapsuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D78C232B665100B8A167 /* MTCapsuleView.m */; };
+		EBE1D791232B689F00B8A167 /* MTCapsuleImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D78F232B689F00B8A167 /* MTCapsuleImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D792232B689F00B8A167 /* MTCapsuleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D790232B689F00B8A167 /* MTCapsuleImageView.m */; };
+		EBE1D795232B702100B8A167 /* MTComplexRoundedRectView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D793232B702100B8A167 /* MTComplexRoundedRectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D796232B702100B8A167 /* MTComplexRoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D794232B702100B8A167 /* MTComplexRoundedRectView.m */; };
+		EBE1D79A232B90C600B8A167 /* MTComplexRoundedRectImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D798232B90C600B8A167 /* MTComplexRoundedRectImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D79B232B90C600B8A167 /* MTComplexRoundedRectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D799232B90C600B8A167 /* MTComplexRoundedRectImageView.m */; };
+		EBE1D79C232B914400B8A167 /* MTCornerRadii.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D797232B703F00B8A167 /* MTCornerRadii.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D79E232B932300B8A167 /* MTCornerRadii.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D79D232B932300B8A167 /* MTCornerRadii.c */; };
+		EBE1D7A1232B97D600B8A167 /* MTCircleProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D79F232B97D600B8A167 /* MTCircleProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7A2232B97D600B8A167 /* MTCircleProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A0232B97D600B8A167 /* MTCircleProcessingImageView.m */; };
+		EBE1D7A5232B9B6500B8A167 /* MTCapsuleProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7A3232B9B6500B8A167 /* MTCapsuleProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7A6232B9B6500B8A167 /* MTCapsuleProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A4232B9B6500B8A167 /* MTCapsuleProcessingImageView.m */; };
+		EBE1D7A9232B9B9B00B8A167 /* MTEllipseProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7A7232B9B9B00B8A167 /* MTEllipseProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7AA232B9B9B00B8A167 /* MTEllipseProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7A8232B9B9B00B8A167 /* MTEllipseProcessingImageView.m */; };
+		EBE1D7AD232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7AB232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7AE232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7AC232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m */; };
+		EBE1D7B1232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7AF232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7B2232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7B0232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m */; };
+		EBE1D7B5232BD46F00B8A167 /* MTMaskProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7B3232BD46F00B8A167 /* MTMaskProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7B6232BD46F00B8A167 /* MTMaskProcessingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D7B4232BD46F00B8A167 /* MTMaskProcessingImageView.m */; };
+		EBE1D7C4232C51F500B8A167 /* MTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DAC232A7CE800286645 /* MTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7C5232C521D00B8A167 /* CGPath+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D787232B54EF00B8A167 /* CGPath+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7C6232C521D00B8A167 /* MTCornerRadii.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D797232B703F00B8A167 /* MTCornerRadii.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7C7232C521D00B8A167 /* MTMaskable.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D779232B24D200B8A167 /* MTMaskable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7C8232C521D00B8A167 /* MTCapsuleView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D78B232B665100B8A167 /* MTCapsuleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7C9232C521D00B8A167 /* MTCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DBD232A8BBF00286645 /* MTCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CA232C521D00B8A167 /* MTComplexRoundedRectView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D793232B702100B8A167 /* MTComplexRoundedRectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CB232C521D00B8A167 /* MTEllipseView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D77F232B4CDF00B8A167 /* MTEllipseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CC232C521D00B8A167 /* MTMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DC7232A932000286645 /* MTMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CD232C521D00B8A167 /* MTRoundedRectView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DC1232A8EAA00286645 /* MTRoundedRectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CE232C521D00B8A167 /* MTCapsuleImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D78F232B689F00B8A167 /* MTCapsuleImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7CF232C521D00B8A167 /* MTCircleImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DB9232A7D8200286645 /* MTCircleImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D0232C521D00B8A167 /* MTComplexRoundedRectImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D798232B90C600B8A167 /* MTComplexRoundedRectImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D1232C521D00B8A167 /* MTEllipseImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D783232B4ED100B8A167 /* MTEllipseImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D2232C521D00B8A167 /* MTMaskImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D3232C521D00B8A167 /* MTRoundedRectImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DBA232A871E00286645 /* MTRoundedRectImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D4232C521D00B8A167 /* MTProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D77B232B2D0300B8A167 /* MTProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D5232C521D00B8A167 /* MTMaskProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7B3232BD46F00B8A167 /* MTMaskProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D6232C521D00B8A167 /* MTCapsuleProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7A3232B9B6500B8A167 /* MTCapsuleProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D7232C521D00B8A167 /* MTCircleProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D79F232B97D600B8A167 /* MTCircleProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D8232C521D00B8A167 /* MTComplexRoundedRectProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7AF232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7D9232C521D00B8A167 /* MTEllipseProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7A7232B9B9B00B8A167 /* MTEllipseProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D7DA232C521D00B8A167 /* MTRoundedRectProcessingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D7AB232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE1D800232C53A200B8A167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE1D7FF232C53A200B8A167 /* Assets.xcassets */; };
+		EBE1D80A232C53DE00B8A167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D8D232A7CBF00286645 /* AppDelegate.m */; };
+		EBE1D80B232C53E900B8A167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D9E232A7CC100286645 /* main.m */; };
+		EBE1D810232C55D300B8A167 /* MTKit-tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE1D7BC232C519D00B8A167 /* MTKit-tvOS.framework */; };
+		EBE1D811232C55D300B8A167 /* MTKit-tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBE1D7BC232C519D00B8A167 /* MTKit-tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE1D816232C62B900B8A167 /* CGPath+Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D788232B54EF00B8A167 /* CGPath+Utils.c */; };
+		EBE1D817232C62BC00B8A167 /* MTCornerRadii.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D79D232B932300B8A167 /* MTCornerRadii.c */; };
+		EBE66D8E232A7CBF00286645 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D8D232A7CBF00286645 /* AppDelegate.m */; };
+		EBE66D94232A7CBF00286645 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D93232A7CBF00286645 /* ViewController.m */; };
+		EBE66D97232A7CBF00286645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE66D95232A7CBF00286645 /* Main.storyboard */; };
+		EBE66D99232A7CC100286645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE66D98232A7CC100286645 /* Assets.xcassets */; };
+		EBE66D9F232A7CC100286645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66D9E232A7CC100286645 /* main.m */; };
+		EBE66DAE232A7CE800286645 /* MTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DAC232A7CE800286645 /* MTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DB1232A7CE800286645 /* MTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE66DAA232A7CE800286645 /* MTKit.framework */; };
+		EBE66DB2232A7CE800286645 /* MTKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBE66DAA232A7CE800286645 /* MTKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE66DB8232A7D7800286645 /* MTCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DB7232A7D7800286645 /* MTCircleImageView.m */; };
+		EBE66DBC232A872400286645 /* MTRoundedRectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DBB232A872400286645 /* MTRoundedRectImageView.m */; };
+		EBE66DBF232A8BBF00286645 /* MTCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DBD232A8BBF00286645 /* MTCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DC0232A8BBF00286645 /* MTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DBE232A8BBF00286645 /* MTCircleView.m */; };
+		EBE66DC3232A8EAA00286645 /* MTRoundedRectView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DC1232A8EAA00286645 /* MTRoundedRectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DC4232A8EAA00286645 /* MTRoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DC2232A8EAA00286645 /* MTRoundedRectView.m */; };
+		EBE66DC5232A903E00286645 /* MTCircleImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DB9232A7D8200286645 /* MTCircleImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DC6232A904100286645 /* MTRoundedRectImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DBA232A871E00286645 /* MTRoundedRectImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DC9232A932000286645 /* MTMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE66DC7232A932000286645 /* MTMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE66DCA232A932000286645 /* MTMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE66DC8232A932000286645 /* MTMaskView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE1D812232C55D300B8A167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE66D81232A7CBF00286645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE1D7BB232C519D00B8A167;
+			remoteInfo = "MTKit-tvOS";
+		};
+		EBE66DAF232A7CE800286645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE66D81232A7CBF00286645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE66DA9232A7CE800286645;
+			remoteInfo = MTKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBE1D814232C55D300B8A167 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBE1D811232C55D300B8A167 /* MTKit-tvOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66DB6232A7CE800286645 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBE66DB2232A7CE800286645 /* MTKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB8A141A232C76BF00DA47D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EB8A141C232C76DE00DA47D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskImageView.h; sourceTree = "<group>"; };
+		EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMaskImageView.m; sourceTree = "<group>"; };
+		EBE1D779232B24D200B8A167 /* MTMaskable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskable.h; sourceTree = "<group>"; };
+		EBE1D77B232B2D0300B8A167 /* MTProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D77C232B2D0300B8A167 /* MTProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D77F232B4CDF00B8A167 /* MTEllipseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEllipseView.h; sourceTree = "<group>"; };
+		EBE1D780232B4CDF00B8A167 /* MTEllipseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEllipseView.m; sourceTree = "<group>"; };
+		EBE1D783232B4ED100B8A167 /* MTEllipseImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEllipseImageView.h; sourceTree = "<group>"; };
+		EBE1D784232B4ED100B8A167 /* MTEllipseImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEllipseImageView.m; sourceTree = "<group>"; };
+		EBE1D787232B54EF00B8A167 /* CGPath+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGPath+Utils.h"; sourceTree = "<group>"; };
+		EBE1D788232B54EF00B8A167 /* CGPath+Utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "CGPath+Utils.c"; sourceTree = "<group>"; };
+		EBE1D78B232B665100B8A167 /* MTCapsuleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCapsuleView.h; sourceTree = "<group>"; };
+		EBE1D78C232B665100B8A167 /* MTCapsuleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCapsuleView.m; sourceTree = "<group>"; };
+		EBE1D78F232B689F00B8A167 /* MTCapsuleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCapsuleImageView.h; sourceTree = "<group>"; };
+		EBE1D790232B689F00B8A167 /* MTCapsuleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCapsuleImageView.m; sourceTree = "<group>"; };
+		EBE1D793232B702100B8A167 /* MTComplexRoundedRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTComplexRoundedRectView.h; sourceTree = "<group>"; };
+		EBE1D794232B702100B8A167 /* MTComplexRoundedRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTComplexRoundedRectView.m; sourceTree = "<group>"; };
+		EBE1D797232B703F00B8A167 /* MTCornerRadii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCornerRadii.h; sourceTree = "<group>"; };
+		EBE1D798232B90C600B8A167 /* MTComplexRoundedRectImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTComplexRoundedRectImageView.h; sourceTree = "<group>"; };
+		EBE1D799232B90C600B8A167 /* MTComplexRoundedRectImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTComplexRoundedRectImageView.m; sourceTree = "<group>"; };
+		EBE1D79D232B932300B8A167 /* MTCornerRadii.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MTCornerRadii.c; sourceTree = "<group>"; };
+		EBE1D79F232B97D600B8A167 /* MTCircleProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCircleProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7A0232B97D600B8A167 /* MTCircleProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCircleProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7A3232B9B6500B8A167 /* MTCapsuleProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCapsuleProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7A4232B9B6500B8A167 /* MTCapsuleProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCapsuleProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7A7232B9B9B00B8A167 /* MTEllipseProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEllipseProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7A8232B9B9B00B8A167 /* MTEllipseProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTEllipseProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7AB232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTRoundedRectProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7AC232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRoundedRectProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7AF232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTComplexRoundedRectProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7B0232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTComplexRoundedRectProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7B3232BD46F00B8A167 /* MTMaskProcessingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskProcessingImageView.h; sourceTree = "<group>"; };
+		EBE1D7B4232BD46F00B8A167 /* MTMaskProcessingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMaskProcessingImageView.m; sourceTree = "<group>"; };
+		EBE1D7BC232C519D00B8A167 /* MTKit-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "MTKit-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE1D7F4232C53A000B8A167 /* MTKitExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTKitExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE1D7FF232C53A200B8A167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE1D804232C53A200B8A167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE1D80C232C55B200B8A167 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBE66D89232A7CBF00286645 /* MTKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE66D8C232A7CBF00286645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBE66D8D232A7CBF00286645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBE66D92232A7CBF00286645 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBE66D93232A7CBF00286645 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBE66D96232A7CBF00286645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBE66D98232A7CC100286645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE66D9D232A7CC100286645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE66D9E232A7CC100286645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBE66DAA232A7CE800286645 /* MTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE66DAC232A7CE800286645 /* MTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKit.h; sourceTree = "<group>"; };
+		EBE66DAD232A7CE800286645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE66DB7232A7D7800286645 /* MTCircleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCircleImageView.m; sourceTree = "<group>"; };
+		EBE66DB9232A7D8200286645 /* MTCircleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCircleImageView.h; sourceTree = "<group>"; };
+		EBE66DBA232A871E00286645 /* MTRoundedRectImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTRoundedRectImageView.h; sourceTree = "<group>"; };
+		EBE66DBB232A872400286645 /* MTRoundedRectImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRoundedRectImageView.m; sourceTree = "<group>"; };
+		EBE66DBD232A8BBF00286645 /* MTCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCircleView.h; sourceTree = "<group>"; };
+		EBE66DBE232A8BBF00286645 /* MTCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCircleView.m; sourceTree = "<group>"; };
+		EBE66DC1232A8EAA00286645 /* MTRoundedRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTRoundedRectView.h; sourceTree = "<group>"; };
+		EBE66DC2232A8EAA00286645 /* MTRoundedRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRoundedRectView.m; sourceTree = "<group>"; };
+		EBE66DC7232A932000286645 /* MTMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskView.h; sourceTree = "<group>"; };
+		EBE66DC8232A932000286645 /* MTMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMaskView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBE1D7B9232C519D00B8A167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1D7F1232C53A000B8A167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1D810232C55D300B8A167 /* MTKit-tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66D86232A7CBF00286645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE66DB1232A7CE800286645 /* MTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66DA7232A7CE800286645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB8A141F232C773800DA47D4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBE66D95232A7CBF00286645 /* Main.storyboard */,
+				EBE66D98232A7CC100286645 /* Assets.xcassets */,
+				EBE1D80C232C55B200B8A167 /* LaunchScreen.storyboard */,
+				EBE66D9D232A7CC100286645 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EB8A1420232C777100DA47D4 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A141A232C76BF00DA47D4 /* Main.storyboard */,
+				EBE1D7FF232C53A200B8A167 /* Assets.xcassets */,
+				EB8A141C232C76DE00DA47D4 /* LaunchScreen.storyboard */,
+				EBE1D804232C53A200B8A167 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		EBE1D80F232C55D300B8A167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBE66D80232A7CBF00286645 = {
+			isa = PBXGroup;
+			children = (
+				EBE66DAB232A7CE800286645 /* Sources */,
+				EBE66D8B232A7CBF00286645 /* Example */,
+				EBE66D8A232A7CBF00286645 /* Products */,
+				EBE1D80F232C55D300B8A167 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE66D8A232A7CBF00286645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE66D89232A7CBF00286645 /* MTKitExample-iOS.app */,
+				EBE66DAA232A7CE800286645 /* MTKit.framework */,
+				EBE1D7BC232C519D00B8A167 /* MTKit-tvOS.framework */,
+				EBE1D7F4232C53A000B8A167 /* MTKitExample-tvOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE66D8B232A7CBF00286645 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A141F232C773800DA47D4 /* iOS */,
+				EB8A1420232C777100DA47D4 /* tvOS */,
+				EBE66D8C232A7CBF00286645 /* AppDelegate.h */,
+				EBE66D8D232A7CBF00286645 /* AppDelegate.m */,
+				EBE66D92232A7CBF00286645 /* ViewController.h */,
+				EBE66D93232A7CBF00286645 /* ViewController.m */,
+				EBE66D9E232A7CC100286645 /* main.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		EBE66DAB232A7CE800286645 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EBE66DAC232A7CE800286645 /* MTKit.h */,
+				EBE66DAD232A7CE800286645 /* Info.plist */,
+				EBE1D787232B54EF00B8A167 /* CGPath+Utils.h */,
+				EBE1D788232B54EF00B8A167 /* CGPath+Utils.c */,
+				EBE1D797232B703F00B8A167 /* MTCornerRadii.h */,
+				EBE1D79D232B932300B8A167 /* MTCornerRadii.c */,
+				EBE1D779232B24D200B8A167 /* MTMaskable.h */,
+				EBE1D78B232B665100B8A167 /* MTCapsuleView.h */,
+				EBE1D78C232B665100B8A167 /* MTCapsuleView.m */,
+				EBE66DBD232A8BBF00286645 /* MTCircleView.h */,
+				EBE66DBE232A8BBF00286645 /* MTCircleView.m */,
+				EBE1D793232B702100B8A167 /* MTComplexRoundedRectView.h */,
+				EBE1D794232B702100B8A167 /* MTComplexRoundedRectView.m */,
+				EBE1D77F232B4CDF00B8A167 /* MTEllipseView.h */,
+				EBE1D780232B4CDF00B8A167 /* MTEllipseView.m */,
+				EBE66DC7232A932000286645 /* MTMaskView.h */,
+				EBE66DC8232A932000286645 /* MTMaskView.m */,
+				EBE66DC1232A8EAA00286645 /* MTRoundedRectView.h */,
+				EBE66DC2232A8EAA00286645 /* MTRoundedRectView.m */,
+				EBE1D78F232B689F00B8A167 /* MTCapsuleImageView.h */,
+				EBE1D790232B689F00B8A167 /* MTCapsuleImageView.m */,
+				EBE66DB9232A7D8200286645 /* MTCircleImageView.h */,
+				EBE66DB7232A7D7800286645 /* MTCircleImageView.m */,
+				EBE1D798232B90C600B8A167 /* MTComplexRoundedRectImageView.h */,
+				EBE1D799232B90C600B8A167 /* MTComplexRoundedRectImageView.m */,
+				EBE1D783232B4ED100B8A167 /* MTEllipseImageView.h */,
+				EBE1D784232B4ED100B8A167 /* MTEllipseImageView.m */,
+				EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */,
+				EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */,
+				EBE66DBA232A871E00286645 /* MTRoundedRectImageView.h */,
+				EBE66DBB232A872400286645 /* MTRoundedRectImageView.m */,
+				EBE1D77B232B2D0300B8A167 /* MTProcessingImageView.h */,
+				EBE1D77C232B2D0300B8A167 /* MTProcessingImageView.m */,
+				EBE1D7B3232BD46F00B8A167 /* MTMaskProcessingImageView.h */,
+				EBE1D7B4232BD46F00B8A167 /* MTMaskProcessingImageView.m */,
+				EBE1D7A3232B9B6500B8A167 /* MTCapsuleProcessingImageView.h */,
+				EBE1D7A4232B9B6500B8A167 /* MTCapsuleProcessingImageView.m */,
+				EBE1D79F232B97D600B8A167 /* MTCircleProcessingImageView.h */,
+				EBE1D7A0232B97D600B8A167 /* MTCircleProcessingImageView.m */,
+				EBE1D7AF232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h */,
+				EBE1D7B0232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m */,
+				EBE1D7A7232B9B9B00B8A167 /* MTEllipseProcessingImageView.h */,
+				EBE1D7A8232B9B9B00B8A167 /* MTEllipseProcessingImageView.m */,
+				EBE1D7AB232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h */,
+				EBE1D7AC232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EBE1D7B7232C519D00B8A167 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1D7CC232C521D00B8A167 /* MTMaskView.h in Headers */,
+				EBE1D7C6232C521D00B8A167 /* MTCornerRadii.h in Headers */,
+				EBE1D7CD232C521D00B8A167 /* MTRoundedRectView.h in Headers */,
+				EBE1D7CA232C521D00B8A167 /* MTComplexRoundedRectView.h in Headers */,
+				EBE1D7D2232C521D00B8A167 /* MTMaskImageView.h in Headers */,
+				EBE1D7D8232C521D00B8A167 /* MTComplexRoundedRectProcessingImageView.h in Headers */,
+				EBE1D7C4232C51F500B8A167 /* MTKit.h in Headers */,
+				EBE1D7C9232C521D00B8A167 /* MTCircleView.h in Headers */,
+				EBE1D7C5232C521D00B8A167 /* CGPath+Utils.h in Headers */,
+				EBE1D7D1232C521D00B8A167 /* MTEllipseImageView.h in Headers */,
+				EBE1D7D7232C521D00B8A167 /* MTCircleProcessingImageView.h in Headers */,
+				EBE1D7D0232C521D00B8A167 /* MTComplexRoundedRectImageView.h in Headers */,
+				EBE1D7C7232C521D00B8A167 /* MTMaskable.h in Headers */,
+				EBE1D7DA232C521D00B8A167 /* MTRoundedRectProcessingImageView.h in Headers */,
+				EBE1D7D6232C521D00B8A167 /* MTCapsuleProcessingImageView.h in Headers */,
+				EBE1D7C8232C521D00B8A167 /* MTCapsuleView.h in Headers */,
+				EBE1D7D3232C521D00B8A167 /* MTRoundedRectImageView.h in Headers */,
+				EBE1D7CB232C521D00B8A167 /* MTEllipseView.h in Headers */,
+				EBE1D7CF232C521D00B8A167 /* MTCircleImageView.h in Headers */,
+				EBE1D7D9232C521D00B8A167 /* MTEllipseProcessingImageView.h in Headers */,
+				EBE1D7D5232C521D00B8A167 /* MTMaskProcessingImageView.h in Headers */,
+				EBE1D7D4232C521D00B8A167 /* MTProcessingImageView.h in Headers */,
+				EBE1D7CE232C521D00B8A167 /* MTCapsuleImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66DA5232A7CE800286645 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1D791232B689F00B8A167 /* MTCapsuleImageView.h in Headers */,
+				EBE1D78D232B665100B8A167 /* MTCapsuleView.h in Headers */,
+				EBE1D777232B1F3100B8A167 /* MTMaskImageView.h in Headers */,
+				EBE1D7B5232BD46F00B8A167 /* MTMaskProcessingImageView.h in Headers */,
+				EBE66DC9232A932000286645 /* MTMaskView.h in Headers */,
+				EBE66DC3232A8EAA00286645 /* MTRoundedRectView.h in Headers */,
+				EBE1D7AD232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h in Headers */,
+				EBE1D77D232B2D0300B8A167 /* MTProcessingImageView.h in Headers */,
+				EBE1D79C232B914400B8A167 /* MTCornerRadii.h in Headers */,
+				EBE1D7A1232B97D600B8A167 /* MTCircleProcessingImageView.h in Headers */,
+				EBE1D77A232B252D00B8A167 /* MTMaskable.h in Headers */,
+				EBE1D785232B4ED100B8A167 /* MTEllipseImageView.h in Headers */,
+				EBE1D7A9232B9B9B00B8A167 /* MTEllipseProcessingImageView.h in Headers */,
+				EBE1D7B1232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.h in Headers */,
+				EBE66DC6232A904100286645 /* MTRoundedRectImageView.h in Headers */,
+				EBE1D7A5232B9B6500B8A167 /* MTCapsuleProcessingImageView.h in Headers */,
+				EBE1D789232B54EF00B8A167 /* CGPath+Utils.h in Headers */,
+				EBE66DBF232A8BBF00286645 /* MTCircleView.h in Headers */,
+				EBE1D79A232B90C600B8A167 /* MTComplexRoundedRectImageView.h in Headers */,
+				EBE66DC5232A903E00286645 /* MTCircleImageView.h in Headers */,
+				EBE66DAE232A7CE800286645 /* MTKit.h in Headers */,
+				EBE1D781232B4CDF00B8A167 /* MTEllipseView.h in Headers */,
+				EBE1D795232B702100B8A167 /* MTComplexRoundedRectView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EBE1D7BB232C519D00B8A167 /* MTKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE1D7C1232C519D00B8A167 /* Build configuration list for PBXNativeTarget "MTKit-tvOS" */;
+			buildPhases = (
+				EBE1D7B7232C519D00B8A167 /* Headers */,
+				EBE1D7B8232C519D00B8A167 /* Sources */,
+				EBE1D7B9232C519D00B8A167 /* Frameworks */,
+				EBE1D7BA232C519D00B8A167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTKit-tvOS";
+			productName = "MTKit-tvOS";
+			productReference = EBE1D7BC232C519D00B8A167 /* MTKit-tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBE1D7F3232C53A000B8A167 /* MTKitExample-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE1D807232C53A200B8A167 /* Build configuration list for PBXNativeTarget "MTKitExample-tvOS" */;
+			buildPhases = (
+				EBE1D7F0232C53A000B8A167 /* Sources */,
+				EBE1D7F1232C53A000B8A167 /* Frameworks */,
+				EBE1D7F2232C53A000B8A167 /* Resources */,
+				EBE1D814232C55D300B8A167 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE1D813232C55D300B8A167 /* PBXTargetDependency */,
+			);
+			name = "MTKitExample-tvOS";
+			productName = "MTKitExample-tvOS";
+			productReference = EBE1D7F4232C53A000B8A167 /* MTKitExample-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE66D88232A7CBF00286645 /* MTKitExample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE66DA2232A7CC100286645 /* Build configuration list for PBXNativeTarget "MTKitExample-iOS" */;
+			buildPhases = (
+				EBE66D85232A7CBF00286645 /* Sources */,
+				EBE66D86232A7CBF00286645 /* Frameworks */,
+				EBE66D87232A7CBF00286645 /* Resources */,
+				EBE66DB6232A7CE800286645 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE66DB0232A7CE800286645 /* PBXTargetDependency */,
+			);
+			name = "MTKitExample-iOS";
+			productName = MTKitExample;
+			productReference = EBE66D89232A7CBF00286645 /* MTKitExample-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE66DA9232A7CE800286645 /* MTKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE66DB3232A7CE800286645 /* Build configuration list for PBXNativeTarget "MTKit-iOS" */;
+			buildPhases = (
+				EBE66DA5232A7CE800286645 /* Headers */,
+				EBE66DA6232A7CE800286645 /* Sources */,
+				EBE66DA7232A7CE800286645 /* Frameworks */,
+				EBE66DA8232A7CE800286645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTKit-iOS";
+			productName = MTKit;
+			productReference = EBE66DAA232A7CE800286645 /* MTKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE66D81232A7CBF00286645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = mntone;
+				TargetAttributes = {
+					EBE1D7BB232C519D00B8A167 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EBE1D7F3232C53A000B8A167 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EBE66D88232A7CBF00286645 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EBE66DA9232A7CE800286645 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = EBE66D84232A7CBF00286645 /* Build configuration list for PBXProject "MTKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE66D80232A7CBF00286645;
+			productRefGroup = EBE66D8A232A7CBF00286645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE66DA9232A7CE800286645 /* MTKit-iOS */,
+				EBE1D7BB232C519D00B8A167 /* MTKit-tvOS */,
+				EBE66D88232A7CBF00286645 /* MTKitExample-iOS */,
+				EBE1D7F3232C53A000B8A167 /* MTKitExample-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE1D7BA232C519D00B8A167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1D7F2232C53A000B8A167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8A141D232C76DE00DA47D4 /* LaunchScreen.storyboard in Resources */,
+				EBE1D800232C53A200B8A167 /* Assets.xcassets in Resources */,
+				EB8A141B232C76BF00DA47D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66D87232A7CBF00286645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8A141E232C76E100DA47D4 /* LaunchScreen.storyboard in Resources */,
+				EBE66D99232A7CC100286645 /* Assets.xcassets in Resources */,
+				EBE66D97232A7CBF00286645 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66DA8232A7CE800286645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE1D7B8232C519D00B8A167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BCCE7232C6D4400F271CE /* MTComplexRoundedRectImageView.m in Sources */,
+				EBE1D816232C62B900B8A167 /* CGPath+Utils.c in Sources */,
+				EB1BCCEF232C6D4400F271CE /* MTComplexRoundedRectProcessingImageView.m in Sources */,
+				EB1BCCE4232C6D4400F271CE /* MTRoundedRectView.m in Sources */,
+				EB1BCCEA232C6D4400F271CE /* MTRoundedRectImageView.m in Sources */,
+				EB1BCCED232C6D4400F271CE /* MTCapsuleProcessingImageView.m in Sources */,
+				EB1BCCDF232C6D4400F271CE /* MTCapsuleView.m in Sources */,
+				EB1BCCE8232C6D4400F271CE /* MTEllipseImageView.m in Sources */,
+				EB1BCCE9232C6D4400F271CE /* MTMaskImageView.m in Sources */,
+				EB1BCCF1232C6D4400F271CE /* MTRoundedRectProcessingImageView.m in Sources */,
+				EB1BCCE6232C6D4400F271CE /* MTCircleImageView.m in Sources */,
+				EB1BCCE2232C6D4400F271CE /* MTEllipseView.m in Sources */,
+				EB1BCCEE232C6D4400F271CE /* MTCircleProcessingImageView.m in Sources */,
+				EBE1D817232C62BC00B8A167 /* MTCornerRadii.c in Sources */,
+				EB1BCCE0232C6D4400F271CE /* MTCircleView.m in Sources */,
+				EB1BCCE1232C6D4400F271CE /* MTComplexRoundedRectView.m in Sources */,
+				EB1BCCF0232C6D4400F271CE /* MTEllipseProcessingImageView.m in Sources */,
+				EB1BCCEB232C6D4400F271CE /* MTProcessingImageView.m in Sources */,
+				EB1BCCE5232C6D4400F271CE /* MTCapsuleImageView.m in Sources */,
+				EB1BCCEC232C6D4400F271CE /* MTMaskProcessingImageView.m in Sources */,
+				EB1BCCE3232C6D4400F271CE /* MTMaskView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1D7F0232C53A000B8A167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1D80B232C53E900B8A167 /* main.m in Sources */,
+				EBE1D80A232C53DE00B8A167 /* AppDelegate.m in Sources */,
+				EB8A1418232C75CD00DA47D4 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66D85232A7CBF00286645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE66D94232A7CBF00286645 /* ViewController.m in Sources */,
+				EBE66D8E232A7CBF00286645 /* AppDelegate.m in Sources */,
+				EBE66D9F232A7CC100286645 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE66DA6232A7CE800286645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1D78A232B54EF00B8A167 /* CGPath+Utils.c in Sources */,
+				EBE66DC0232A8BBF00286645 /* MTCircleView.m in Sources */,
+				EBE1D786232B4ED100B8A167 /* MTEllipseImageView.m in Sources */,
+				EBE1D77E232B2D0300B8A167 /* MTProcessingImageView.m in Sources */,
+				EBE1D7A6232B9B6500B8A167 /* MTCapsuleProcessingImageView.m in Sources */,
+				EBE1D79B232B90C600B8A167 /* MTComplexRoundedRectImageView.m in Sources */,
+				EBE1D778232B1F3100B8A167 /* MTMaskImageView.m in Sources */,
+				EBE1D7A2232B97D600B8A167 /* MTCircleProcessingImageView.m in Sources */,
+				EBE66DC4232A8EAA00286645 /* MTRoundedRectView.m in Sources */,
+				EBE1D7B6232BD46F00B8A167 /* MTMaskProcessingImageView.m in Sources */,
+				EBE1D7AE232B9DC200B8A167 /* MTRoundedRectProcessingImageView.m in Sources */,
+				EBE1D78E232B665100B8A167 /* MTCapsuleView.m in Sources */,
+				EBE1D792232B689F00B8A167 /* MTCapsuleImageView.m in Sources */,
+				EBE1D79E232B932300B8A167 /* MTCornerRadii.c in Sources */,
+				EBE1D796232B702100B8A167 /* MTComplexRoundedRectView.m in Sources */,
+				EBE1D7AA232B9B9B00B8A167 /* MTEllipseProcessingImageView.m in Sources */,
+				EBE1D7B2232BC7F000B8A167 /* MTComplexRoundedRectProcessingImageView.m in Sources */,
+				EBE1D782232B4CDF00B8A167 /* MTEllipseView.m in Sources */,
+				EBE66DCA232A932000286645 /* MTMaskView.m in Sources */,
+				EBE66DB8232A7D7800286645 /* MTCircleImageView.m in Sources */,
+				EBE66DBC232A872400286645 /* MTRoundedRectImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE1D813232C55D300B8A167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE1D7BB232C519D00B8A167 /* MTKit-tvOS */;
+			targetProxy = EBE1D812232C55D300B8A167 /* PBXContainerItemProxy */;
+		};
+		EBE66DB0232A7CE800286645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE66DA9232A7CE800286645 /* MTKit-iOS */;
+			targetProxy = EBE66DAF232A7CE800286645 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBE66D95232A7CBF00286645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE66D96232A7CBF00286645 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBE1D7C2232C519D00B8A167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKit-tvOS";
+				PRODUCT_NAME = "MTKit-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		EBE1D7C3232C519D00B8A167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKit-tvOS";
+				PRODUCT_NAME = "MTKit-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		EBE1D808232C53A200B8A167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				INFOPLIST_FILE = Example/tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKitExample-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		EBE1D809232C53A200B8A167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				INFOPLIST_FILE = Example/tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKitExample-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		EBE66DA0232A7CC100286645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		EBE66DA1232A7CC100286645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBE66DA3232A7CC100286645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKitExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBE66DA4232A7CC100286645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mntone.MTKitExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBE66DB4232A7CE800286645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.MTKit;
+				PRODUCT_NAME = MTKit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		EBE66DB5232A7CE800286645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = mntone.MTKit;
+				PRODUCT_NAME = MTKit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE1D7C1232C519D00B8A167 /* Build configuration list for PBXNativeTarget "MTKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE1D7C2232C519D00B8A167 /* Debug */,
+				EBE1D7C3232C519D00B8A167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE1D807232C53A200B8A167 /* Build configuration list for PBXNativeTarget "MTKitExample-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE1D808232C53A200B8A167 /* Debug */,
+				EBE1D809232C53A200B8A167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE66D84232A7CBF00286645 /* Build configuration list for PBXProject "MTKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE66DA0232A7CC100286645 /* Debug */,
+				EBE66DA1232A7CC100286645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE66DA2232A7CC100286645 /* Build configuration list for PBXNativeTarget "MTKitExample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE66DA3232A7CC100286645 /* Debug */,
+				EBE66DA4232A7CC100286645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE66DB3232A7CE800286645 /* Build configuration list for PBXNativeTarget "MTKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE66DB4232A7CE800286645 /* Debug */,
+				EBE66DB5232A7CE800286645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBE66D81232A7CBF00286645 /* Project object */;
+}

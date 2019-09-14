@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pqs-aS-rGw">
+                                <rect key="frame" x="20" y="144" width="374" height="441.5"/>
+                                <subviews>
+                                    <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- based on UIView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-1I-ibE">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wg2-IG-ug2">
+                                        <rect key="frame" x="0.0" y="40.5" width="340" height="40"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-wp-5XM" customClass="MTCapsuleView">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="K0i-wp-5XM" secondAttribute="height" multiplier="3:2" id="hS4-dJ-bHJ"/>
+                                                    <constraint firstAttribute="width" constant="60" id="yng-f9-aOm"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Pwd-q9-cW3" appends="YES" id="whP-x5-gaR"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZC-Dm-Vil" customClass="MTCircleView">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="cCY-52-oEn" appends="YES" id="84q-wO-aGZ"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isA-nc-taV" customClass="MTEllipseView">
+                                                <rect key="frame" x="140" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="L5Q-s1-hYn" appends="YES" id="Hus-Xh-C3u"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fG7-0Q-WGN" customClass="MTRoundedRectView">
+                                                <rect key="frame" x="210" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rEw-p5-17A" appends="YES" id="hDa-ri-TxV"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30y-eJ-dcY" customClass="MTComplexRoundedRectView">
+                                                <rect key="frame" x="280" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="CFg-Lf-9zj" appends="YES" id="cgJ-4X-Fco"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="e9T-oq-jpR">
+                                        <rect key="frame" x="0.0" y="100.5" width="320" height="60"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQg-SZ-mCc" customClass="MTCapsuleView">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sQg-SZ-mCc" secondAttribute="height" multiplier="2:3" id="ReO-oA-Mhg"/>
+                                                    <constraint firstAttribute="width" constant="40" id="wc7-7J-KJx"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="vfZ-cy-V2z" appends="YES" id="kfa-Rz-HZa"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNo-Tp-iw2" customClass="MTCircleView">
+                                                <rect key="frame" x="70" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Chf-fV-thR" appends="YES" id="v27-ng-nSk"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGq-VU-njZ" customClass="MTEllipseView">
+                                                <rect key="frame" x="140" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ApU-BB-DXP" appends="YES" id="0Ie-sT-WIE"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJF-ep-REh" customClass="MTRoundedRectView">
+                                                <rect key="frame" x="210" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="oL6-Bg-dex" appends="YES" id="4ES-Wm-C4F"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ0-10-zq3" customClass="MTComplexRoundedRectView">
+                                                <rect key="frame" x="280" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="GPb-8G-9xX" appends="YES" id="cR8-F7-bI8"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- based on UIImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-I9-wPN">
+                                        <rect key="frame" x="0.0" y="180.5" width="186.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-KM-1lG">
+                                        <rect key="frame" x="0.0" y="221" width="340" height="40"/>
+                                        <subviews>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qv8-p5-3cI" customClass="MTCapsuleImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="DC6-j2-E1A"/>
+                                                    <constraint firstAttribute="width" secondItem="qv8-p5-3cI" secondAttribute="height" multiplier="3:2" id="FmE-L2-bbC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="NwZ-X0-4Rr" appends="YES" id="g29-f4-Uu1"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-eZ-VHl" customClass="MTCircleImageView">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="mNF-qb-u4G" appends="YES" id="8U3-ak-fIl"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mo7-go-YZ5" customClass="MTEllipseImageView">
+                                                <rect key="frame" x="140" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Twq-gN-DJl" appends="YES" id="iaG-fr-s2b"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TON-25-yuO" customClass="MTRoundedRectImageView">
+                                                <rect key="frame" x="210" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="sIp-99-h1m" appends="YES" id="NNw-yG-l23"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cS7-qP-KfB" customClass="MTComplexRoundedRectImageView">
+                                                <rect key="frame" x="280" y="0.0" width="60" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="9uD-SQ-6sZ" appends="YES" id="vQj-pU-s7F"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F8X-rL-KvC">
+                                        <rect key="frame" x="0.0" y="281" width="320" height="60"/>
+                                        <subviews>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qW0-7r-Jvb" customClass="MTCapsuleImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="iTt-4h-PGc"/>
+                                                    <constraint firstAttribute="width" secondItem="qW0-7r-Jvb" secondAttribute="height" multiplier="2:3" id="vIz-yv-yuJ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8Vx-Ou-lDU" appends="YES" id="fg0-NH-sBU"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="glh-mD-jTE" customClass="MTCircleImageView">
+                                                <rect key="frame" x="70" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="TC0-Vm-QAy" appends="YES" id="De5-IR-HVO"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiG-If-590" customClass="MTEllipseImageView">
+                                                <rect key="frame" x="140" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ke5-9q-7F8" appends="YES" id="EYn-AH-QZ4"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1zD-v8-1kO" customClass="MTRoundedRectImageView">
+                                                <rect key="frame" x="210" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="nhs-X2-X3L" appends="YES" id="HCA-zk-gVV"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-gi-yLQ" customClass="MTComplexRoundedRectImageView">
+                                                <rect key="frame" x="280" y="0.0" width="40" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="r5N-xK-8ep" appends="YES" id="XLN-2V-JSZ"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Processing image view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgu-5P-MP8">
+                                        <rect key="frame" x="0.0" y="361" width="187" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-1c-hjk">
+                                        <rect key="frame" x="0.0" y="401.5" width="340" height="40"/>
+                                        <subviews>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVw-r7-Pgi" customClass="MTCapsuleProcessingImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="BqG-sR-vEQ"/>
+                                                    <constraint firstAttribute="width" secondItem="XVw-r7-Pgi" secondAttribute="height" multiplier="3:2" id="hwR-R6-fUO"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="mJf-nu-OrR" appends="YES" id="M9i-k9-fsF"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgH-qY-nIO" customClass="MTCircleProcessingImageView">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="40"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="gDK-0m-YO2" appends="YES" id="hii-mG-ukd"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywx-sQ-jmk" customClass="MTEllipseProcessingImageView">
+                                                <rect key="frame" x="140" y="0.0" width="60" height="40"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ODL-m9-LKk" appends="YES" id="1Kv-Yx-DPL"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCi-r0-rSd" customClass="MTRoundedRectProcessingImageView">
+                                                <rect key="frame" x="210" y="0.0" width="60" height="40"/>
+                                                <gestureRecognizers/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="PFZ-Bq-aQ0" appends="YES" id="i64-79-RuD"/>
+                                                </connections>
+                                            </view>
+                                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-ZO-Khv" customClass="MTComplexRoundedRectProcessingImageView">
+                                                <rect key="frame" x="280" y="0.0" width="60" height="40"/>
+                                                <gestureRecognizers/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tXz-Gu-T3n" appends="YES" id="FlU-4w-qX0"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pqs-aS-rGw" secondAttribute="trailing" constant="20" id="Bup-JL-5TL"/>
+                            <constraint firstItem="Pqs-aS-rGw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="S2H-Dv-6Tt"/>
+                            <constraint firstItem="Pqs-aS-rGw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t3K-mf-YCT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="capsuleProcessingImageView" destination="XVw-r7-Pgi" id="KcU-Fv-5Is"/>
+                        <outlet property="circleProcessingImageView" destination="SgH-qY-nIO" id="2PZ-V6-ns0"/>
+                        <outlet property="complexRoundedRectProcessingImageView" destination="kbF-ZO-Khv" id="vFx-Bm-vb5"/>
+                        <outlet property="ellipseProcessingImageView" destination="Ywx-sQ-jmk" id="Mwt-u9-Dzv"/>
+                        <outlet property="roundedRectProcessingImageView" destination="HCi-r0-rSd" id="OFT-WX-V6F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pwd-q9-cW3">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="90e-Kd-HZc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cCY-52-oEn">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="XK8-lL-X1l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="L5Q-s1-hYn">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="AOD-Et-Pke"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rEw-p5-17A">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="91O-nO-jqn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CFg-Lf-9zj">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="TFb-RO-2LC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vfZ-cy-V2z">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="JVn-A4-FO0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Chf-fV-thR">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="Mij-AG-HG1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ApU-BB-DXP">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="gVB-el-C7v"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oL6-Bg-dex">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="QVR-dM-aW4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GPb-8G-9xX">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="K1E-K7-OHM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NwZ-X0-4Rr">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="yXr-Wc-7kP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mNF-qb-u4G">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="l2g-5v-Ke2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Twq-gN-DJl">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="Hi8-2d-BuK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sIp-99-h1m">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="vkO-qI-0Pk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9uD-SQ-6sZ">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="2fV-L0-79a"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8Vx-Ou-lDU">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="8wg-lR-ZTB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TC0-Vm-QAy">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="QK3-OG-J25"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ke5-9q-7F8">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="yMB-s6-fWp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nhs-X2-X3L">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="scK-0n-NBf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r5N-xK-8ep">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="rRr-in-Skn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mJf-nu-OrR">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="LKX-gY-8a4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gDK-0m-YO2">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="2f4-bb-pHP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ODL-m9-LKk">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="hUK-gd-N99"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="PFZ-Bq-aQ0">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="NSK-SH-ARJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tXz-Gu-T3n">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="fgm-0E-9vE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
