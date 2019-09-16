@@ -88,14 +88,6 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 	CHECK_RELEASE;
 }
 
-- (void)setBounds:(CGRect)bounds {
-	[super setBounds:bounds];
-	
-	if (!CGRectEqualToRect(self.bounds, bounds)) {
-		[self setNeedsProcessingImage];
-	}
-}
-
 - (void)didMoveToSuperview {
 	[self processImageIfNeeded];
 	[super didMoveToSuperview];

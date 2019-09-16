@@ -28,9 +28,11 @@
 }
 
 - (void)setBounds:(CGRect)bounds {
+	CGRect oldBounds = self.bounds;
+	
 	[super setBounds:bounds];
 	
-	if (!CGRectEqualToRect(self.bounds, bounds)) {
+	if (!CGRectEqualToRect(oldBounds, bounds)) {
 		[self setNeedsUpdateMask];
 	}
 }
