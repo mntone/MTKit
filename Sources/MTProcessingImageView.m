@@ -174,6 +174,7 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 
 		CGImageRef processedImage = CGBitmapContextCreateImage(context);
 		if (processedImage) {
+			_processedImage = processedImage;
 			self.layer.contents = (__bridge id)processedImage;
 			
 			goto finally;

@@ -2,6 +2,12 @@
 #import "MTProcessingImageView+Private.h"
 #import "CGPath+Utils.h"
 
+#define CHECK_RELEASE \
+	if (_maskPath) { \
+		CGPathRelease(_maskPath); \
+		_maskPath = nil; \
+	}
+
 @implementation MTMaskProcessingImageView {
 	CGPathRef _maskPath;
 	
@@ -25,6 +31,10 @@
 		[self commonInit];
 	}
 	return self;
+}
+
+- (void)dealloc {
+	CHECK_RELEASE;
 }
 
 - (void)setBounds:(CGRect)bounds {
@@ -51,6 +61,8 @@
 - (void)updateImage:(CGContextRef)context withRect:(CGRect)rect {
 	if (_needsUpdateMask) {
 		_needsUpdateMask = NO;
+		
+		CHECK_RELEASE;
 		
 		CGPathRef maskPath = [self updateMask];
 		_maskPath = maskPath;
