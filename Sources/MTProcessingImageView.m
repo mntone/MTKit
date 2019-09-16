@@ -1,6 +1,6 @@
 #import <UIKit/UIImage.h>
 #import <UIKit/UIScreen.h>
-#import "MTProcessingImageView.h"
+#import "MTProcessingImageView+Private.h"
 
 #define CHECK_RELEASE \
 	if (_processedImage) { \
@@ -96,20 +96,24 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 	}
 }
 
+- (void)didMoveToSuperview {
+	[self processImageIfNeeded];
+	[super didMoveToSuperview];
+}
+
+- (void)processImageIfNeeded {
+	if (_needProcessing && self.superview && _image) {
+		_needProcessing = NO;
+		[self updateImagePrivate];
+	}
+}
+
 - (void)setNeedsProcessingImage {
 	if (!_needProcessing) {
 		_needProcessing = YES;
 	}
-}
-
-- (void)layoutSubviews {
-	if (_needProcessing) {
-		_needProcessing = NO;
-		
-		[self updateImagePrivate];
-	}
 	
-	[super layoutSubviews];
+	[self processImageIfNeeded];
 }
 
 - (void)updateImage:(CGContextRef)context withRect:(CGRect)rect {
@@ -142,8 +146,7 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 	
 	CGImageRef cgImage = _image.CGImage;
 	if (cgImage) {
-		CGContextScaleCTM(context, scale, -scale);
-		CGContextTranslateCTM(context, 0.0, -currentHeight);
+		CGContextScaleCTM(context, scale, scale);
 		[self updateImage:context withRect:currentBounds];
 		
 		switch (_processingContentMode) {

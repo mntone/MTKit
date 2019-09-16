@@ -3,9 +3,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MTMaskProcessingImageView : MTProcessingImageView <MTMaskable>
+@interface MTMaskProcessingImageView : MTProcessingImageView
 
-@property (nullable) CGPathRef maskPath;
+@property (nullable, readonly) CGPathRef maskPath;
+
+- (void)setNeedsUpdateMask;
+- (CGPathRef __nullable)updateMask;
 
 @end
 

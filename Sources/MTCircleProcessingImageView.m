@@ -3,9 +3,9 @@
 
 @implementation MTCircleProcessingImageView
 
-- (void)updateMask {
+- (CGPathRef)updateMask {
 	CGPathRef maskPath = mt_CGPathCreateWithCircleInRect(self.bounds, nil);
-	[self setMaskPath:maskPath];
+	return maskPath;
 }
 
 @end

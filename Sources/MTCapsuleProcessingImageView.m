@@ -3,9 +3,9 @@
 
 @implementation MTCapsuleProcessingImageView
 
-- (void)updateMask {
+- (CGPathRef)updateMask {
 	CGPathRef maskPath = mt_CGPathCreateWithCapsuleInRect(self.bounds, nil);
-	[self setMaskPath:maskPath];
+	return maskPath;
 }
 
 @end

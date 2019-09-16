@@ -5,12 +5,12 @@
 	CGFloat _cornerRadius;
 }
 
-- (void)updateMask {
+- (CGPathRef)updateMask {
 	if (_cornerRadius >= 0.01) {
 		CGPathRef maskPath = mt_CGPathCreateWithRoundedRect(self.bounds, _cornerRadius, nil);
-		[self setMaskPath:maskPath];
+		return maskPath;
 	} else {
-		[self setMaskPath:nil];
+		return nil;
 	}
 }
 

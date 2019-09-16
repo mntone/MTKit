@@ -3,9 +3,9 @@
 
 @implementation MTEllipseProcessingImageView
 
-- (void)updateMask {
+- (CGPathRef)updateMask {
 	CGPathRef maskPath = CGPathCreateWithEllipseInRect(self.bounds, nil);
-	[self setMaskPath:maskPath];
+	return maskPath;
 }
 
 @end

@@ -1,4 +1,5 @@
 #import "MTMaskProcessingImageView.h"
+#import "MTProcessingImageView+Private.h"
 #import "CGPath+Utils.h"
 
 @implementation MTMaskProcessingImageView {
@@ -9,6 +10,7 @@
 
 - (void)commonInit {
 	_needsUpdateMask = YES;
+	[super commonInit];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -36,16 +38,20 @@
 - (void)setNeedsUpdateMask {
 	if (!_needsUpdateMask) {
 		_needsUpdateMask = YES;
+		[self setNeedsProcessingImage];
 	}
 }
 
-- (void)updateMask {
+- (CGPathRef)updateMask {
+	return nil;
 }
 
 - (void)updateImage:(CGContextRef)context withRect:(CGRect)rect {
 	if (_needsUpdateMask) {
 		_needsUpdateMask = NO;
-		[self updateMask];
+		
+		CGPathRef maskPath = [self updateMask];
+		_maskPath = maskPath;
 	}
 	
 	if (_maskPath) {
@@ -66,12 +72,6 @@
 
 - (CGPathRef)maskPath {
 	return _maskPath;
-}
-
-- (void)setMaskPath:(CGPathRef)maskPath {
-	_maskPath = maskPath;
-	[self setNeedsUpdateMask];
-	[self setNeedsProcessingImage];
 }
 
 @end

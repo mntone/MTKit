@@ -4,12 +4,17 @@
 @implementation MTComplexRoundedRectProcessingImageView {
 	MTCornerRadii _cornerRadii;
 }
-- (void)updateMask {
+- (CGPathRef)updateMask {
 	if (!MTCornerRadiiIsNull(_cornerRadii)) {
-		CGPathRef maskPath = mt_CGPathCreateWithComplexRoundedRect(self.bounds, _cornerRadii, nil);
-		[self setMaskPath:maskPath];
+		MTCornerRadii inverse;
+		inverse.topLeft = _cornerRadii.bottomLeft;
+		inverse.topRight = _cornerRadii.bottomRight;
+		inverse.bottomLeft = _cornerRadii.topLeft;
+		inverse.bottomRight = _cornerRadii.topRight;
+		CGPathRef maskPath = mt_CGPathCreateWithComplexRoundedRect(self.bounds, inverse, nil);
+		return maskPath;
 	} else {
-		[self setMaskPath:nil];
+		return nil;
 	}
 }
 
