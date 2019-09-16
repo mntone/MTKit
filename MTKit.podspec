@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 	spec.name          = "MTKit"
-	spec.version       = "0.9.0"
+	spec.version       = "0.9.1"
 	spec.summary       = "MTKit (UIKit add-ons)"
 	spec.description   = "UIKit extensions"
 	spec.homepage      = "https://github.com/mntone/MTKit"
