@@ -30,6 +30,8 @@
 		EB8A141B232C76BF00DA47D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8A141A232C76BF00DA47D4 /* Main.storyboard */; };
 		EB8A141D232C76DE00DA47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8A141C232C76DE00DA47D4 /* LaunchScreen.storyboard */; };
 		EB8A141E232C76E100DA47D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1D80C232C55B200B8A167 /* LaunchScreen.storyboard */; };
+		EB8A1446232F0DD200DA47D4 /* CGFloat+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8A1443232F0D9100DA47D4 /* CGFloat+Utils.h */; };
+		EB8A1447232F0DD200DA47D4 /* CGFloat+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8A1443232F0D9100DA47D4 /* CGFloat+Utils.h */; };
 		EBE1D777232B1F3100B8A167 /* MTMaskImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBE1D778232B1F3100B8A167 /* MTMaskImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */; };
 		EBE1D77A232B252D00B8A167 /* MTMaskable.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE1D779232B24D200B8A167 /* MTMaskable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -158,6 +160,7 @@
 /* Begin PBXFileReference section */
 		EB8A141A232C76BF00DA47D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EB8A141C232C76DE00DA47D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB8A1443232F0D9100DA47D4 /* CGFloat+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGFloat+Utils.h"; sourceTree = "<group>"; };
 		EBE1D775232B1F3100B8A167 /* MTMaskImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskImageView.h; sourceTree = "<group>"; };
 		EBE1D776232B1F3100B8A167 /* MTMaskImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMaskImageView.m; sourceTree = "<group>"; };
 		EBE1D779232B24D200B8A167 /* MTMaskable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaskable.h; sourceTree = "<group>"; };
@@ -323,6 +326,7 @@
 			children = (
 				EBE66DAC232A7CE800286645 /* MTKit.h */,
 				EBE66DAD232A7CE800286645 /* Info.plist */,
+				EB8A1443232F0D9100DA47D4 /* CGFloat+Utils.h */,
 				EBE1D787232B54EF00B8A167 /* CGPath+Utils.h */,
 				EBE1D788232B54EF00B8A167 /* CGPath+Utils.c */,
 				EBE1D797232B703F00B8A167 /* MTCornerRadii.h */,
@@ -386,6 +390,7 @@
 				EBE1D7C4232C51F500B8A167 /* MTKit.h in Headers */,
 				EBE1D7C9232C521D00B8A167 /* MTCircleView.h in Headers */,
 				EBE1D7C5232C521D00B8A167 /* CGPath+Utils.h in Headers */,
+				EB8A1446232F0DD200DA47D4 /* CGFloat+Utils.h in Headers */,
 				EBE1D7D1232C521D00B8A167 /* MTEllipseImageView.h in Headers */,
 				EBE1D7D7232C521D00B8A167 /* MTCircleProcessingImageView.h in Headers */,
 				EBE1D7D0232C521D00B8A167 /* MTComplexRoundedRectImageView.h in Headers */,
@@ -416,6 +421,7 @@
 				EBE1D7AD232B9DC200B8A167 /* MTRoundedRectProcessingImageView.h in Headers */,
 				EBE1D77D232B2D0300B8A167 /* MTProcessingImageView.h in Headers */,
 				EBE1D79C232B914400B8A167 /* MTCornerRadii.h in Headers */,
+				EB8A1447232F0DD200DA47D4 /* CGFloat+Utils.h in Headers */,
 				EBE1D7A1232B97D600B8A167 /* MTCircleProcessingImageView.h in Headers */,
 				EBE1D77A232B252D00B8A167 /* MTMaskable.h in Headers */,
 				EBE1D785232B4ED100B8A167 /* MTEllipseImageView.h in Headers */,

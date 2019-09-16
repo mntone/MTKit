@@ -1,4 +1,5 @@
 #include <math.h>
+#include "CGFloat+Utils.h"
 #include "CGPath+Utils.h"
 #include "MTCornerRadii.h"
 
@@ -8,12 +9,12 @@ CGPathRef mt_CGPathCreateWithCapsuleInRect(CGRect rect, const CGAffineTransform 
 	
 	CGMutablePathRef path = CGPathCreateMutable();
 	if (currentWidth > currentHeight) {
-		CGFloat radius = floor(0.5 * currentHeight);
+		CGFloat radius = CGFloat_floor(0.5 * currentHeight);
 		CGPathMoveToPoint(path, transform, radius, 0.0);
 		CGPathAddArc(path, transform, currentWidth - radius, radius, radius, -M_PI_2, M_PI_2, FALSE);
 		CGPathAddArc(path, transform, radius, radius, radius, M_PI_2, -M_PI_2, FALSE);
 	} else {
-		CGFloat radius = floor(0.5 * currentWidth);
+		CGFloat radius = CGFloat_floor(0.5 * currentWidth);
 		CGPathMoveToPoint(path, transform, 0.0, radius);
 		CGPathAddArc(path, transform, radius, radius, radius, M_PI, 0.0, FALSE);
 		CGPathAddArc(path, transform, radius, currentHeight - radius, radius, 0.0, M_PI, FALSE);
@@ -27,10 +28,10 @@ CGPathRef mt_CGPathCreateWithCircleInRect(CGRect rect, const CGAffineTransform *
 	
 	CGRect newRect;
 	if (currentWidth > currentHeight) {
-		CGFloat offsetX = floor(0.5 * (currentWidth - currentHeight));
+		CGFloat offsetX = CGFloat_floor(0.5 * (currentWidth - currentHeight));
 		newRect = CGRectMake(offsetX, 0.0, currentHeight, currentHeight);
 	} else {
-		CGFloat offsetY = floor(0.5 * (currentHeight - currentWidth));
+		CGFloat offsetY = CGFloat_floor(0.5 * (currentHeight - currentWidth));
 		newRect = CGRectMake(0.0, offsetY, currentWidth, currentWidth);
 	}
 	
@@ -43,18 +44,18 @@ CGPathRef mt_CGPathCreateWithRoundedRect(CGRect rect, CGFloat cornerRadius, cons
 	CGFloat currentWidth = CGRectGetWidth(rect);
 	CGFloat wCornerRadius = currentWidth >= dCornerRadius
 		? cornerRadius
-		: floor(0.5 * currentWidth);
+		: CGFloat_floor(0.5 * currentWidth);
 	CGFloat currentHeight = CGRectGetHeight(rect);
 	CGFloat hCornerRadius = currentHeight >= dCornerRadius
 		? cornerRadius
-		: floor(0.5 * currentHeight);
+		: CGFloat_floor(0.5 * currentHeight);
 	return CGPathCreateWithRoundedRect(rect, wCornerRadius, hCornerRadius, transform);
 }
 
 static inline CGFloat calcCornerRadius(CGFloat baseCornerRadius, CGFloat length, CGFloat sumCornerRadius) {
 	return length >= sumCornerRadius
 		? baseCornerRadius
-		: floor(length * baseCornerRadius / sumCornerRadius);
+		: CGFloat_floor(length * baseCornerRadius / sumCornerRadius);
 }
 
 CGPathRef mt_CGPathCreateWithComplexRoundedRect(CGRect rect, MTCornerRadii cornerRadii, const CGAffineTransform * __nullable transform) {
