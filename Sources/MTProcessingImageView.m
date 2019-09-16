@@ -4,6 +4,7 @@
 
 #define CHECK_RELEASE \
 	if (_processedImage) { \
+		self.layer.contents = nil; \
 		CGImageRelease(_processedImage); \
 		_processedImage = nil; \
 	}
@@ -94,7 +95,7 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 }
 
 - (void)processImageIfNeeded {
-	if (_needProcessing && self.superview && _image) {
+	if (_needProcessing && self.superview) {
 		_needProcessing = NO;
 		[self updateImagePrivate];
 	}
@@ -113,6 +114,11 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 
 - (void)updateImagePrivate {
 	CHECK_RELEASE;
+	
+	if (!_image) {
+		return;
+	}
+	
 	UPDATE_SCALE;
 	
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
