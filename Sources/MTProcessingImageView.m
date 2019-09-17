@@ -109,7 +109,10 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 	[self processImageIfNeeded];
 }
 
-- (void)updateImage:(CGContextRef)context withRect:(CGRect)rect {
+- (void)processImageBefore:(CGContextRef)context withRect:(CGRect)rect {
+}
+
+- (void)processImageAfter:(CGContextRef)context withRect:(CGRect)rect {
 }
 
 - (void)updateImagePrivate {
@@ -145,7 +148,8 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 	CGImageRef cgImage = _image.CGImage;
 	if (cgImage) {
 		CGContextScaleCTM(context, scale, scale);
-		[self updateImage:context withRect:currentBounds];
+		
+		[self processImageBefore:context withRect:currentBounds];
 		
 		switch (_processingContentMode) {
 		case MTProcessingImageViewProcessingContentModeScaleAspectFit: {
@@ -171,6 +175,8 @@ static inline CGRect getAspectFillRect(CGRect viewRect, CGRect imageRect) {
 			CGContextDrawImage(context, currentBounds, cgImage);
 			break;
 		}
+		
+		[self processImageAfter:context withRect:currentBounds];
 
 		CGImageRef processedImage = CGBitmapContextCreateImage(context);
 		if (processedImage) {

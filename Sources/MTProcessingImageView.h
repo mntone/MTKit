@@ -15,7 +15,8 @@ IB_DESIGNABLE
 @property (nonatomic) MTProcessingImageViewProcessingContentMode processingContentMode;
 
 - (void)setNeedsProcessingImage;
-- (void)updateImage:(CGContextRef)context withRect:(CGRect)rect;
+- (void)processImageBefore:(CGContextRef)context withRect:(CGRect)rect;
+- (void)processImageAfter:(CGContextRef)context withRect:(CGRect)rect;
 
 @end
 

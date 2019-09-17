@@ -58,7 +58,7 @@
 	return nil;
 }
 
-- (void)updateImage:(CGContextRef)context withRect:(CGRect)rect {
+- (void)processImageBefore:(CGContextRef)context withRect:(CGRect)rect {
 	if (_needsUpdateMask) {
 		_needsUpdateMask = NO;
 		
