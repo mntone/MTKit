@@ -22,13 +22,20 @@
 	return self;
 }
 
-- (void)setBounds:(CGRect)bounds {
-	BOOL change = !CGRectEqualToRect(self.bounds, bounds);
-	[super setBounds:bounds];
-	
-	if (change) {
-		[self setNeedsUpdateMask];
+- (void)setFrame:(CGRect)frame {
+	if (CGRectEqualToRect(self.frame, frame)) {
+		return;
 	}
+	[super setFrame:frame];
+	[self setNeedsUpdateMask];
+}
+
+- (void)setBounds:(CGRect)bounds {
+	if (CGRectEqualToRect(self.bounds, bounds)) {
+		return;
+	}
+	[super setBounds:bounds];
+	[self setNeedsUpdateMask];
 }
 
 - (void)setNeedsUpdateMask {
