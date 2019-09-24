@@ -1,20 +1,9 @@
 #import "MTComplexRoundedRectView.h"
 #import "CGPath+Utils.h"
 
-#define CHECK_RELEASE \
-	CGPathRef oldPath = _maskLayer.path; \
-	if (oldPath) { \
-		_maskLayer.path = nil; \
-		CGPathRelease(oldPath); \
-	}
-
 @implementation MTComplexRoundedRectView {
 	MTCornerRadii _cornerRadii;
 	CAShapeLayer *_maskLayer;
-}
-
-- (void)dealloc {
-	CHECK_RELEASE;
 }
 
 - (void)updateMask {
@@ -29,8 +18,6 @@
 		maskLayer = [[CAShapeLayer alloc] init];
 		_maskLayer = maskLayer;
 	}
-	
-	CHECK_RELEASE;
 
 	CGPathRef newPath = mt_CGPathCreateWithComplexRoundedRect(currentBounds, self.cornerRadii, nil);
 	maskLayer.path = newPath;

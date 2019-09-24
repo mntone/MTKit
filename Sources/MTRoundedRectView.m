@@ -1,20 +1,9 @@
 #import "MTRoundedRectView.h"
 #import "CGPath+Utils.h"
 
-#define CHECK_RELEASE \
-	CGPathRef oldPath = _maskLayer.path; \
-	if (oldPath) { \
-		_maskLayer.path = nil; \
-		CGPathRelease(oldPath); \
-	}
-
 @implementation MTRoundedRectView {
 	CGFloat _cornerRadius;
 	CAShapeLayer *_maskLayer;
-}
-
-- (void)dealloc {
-	CHECK_RELEASE;
 }
 
 - (void)updateMask {
@@ -29,8 +18,6 @@
 		maskLayer = [[CAShapeLayer alloc] init];
 		_maskLayer = maskLayer;
 	}
-	
-	CHECK_RELEASE;
 	
 	CGPathRef newPath = mt_CGPathCreateWithRoundedRect(currentBounds, _cornerRadius, nil);
 	maskLayer.path = newPath;

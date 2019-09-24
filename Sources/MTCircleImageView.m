@@ -1,19 +1,8 @@
 #import "MTCircleImageView.h"
 #import "CGPath+Utils.h"
 
-#define CHECK_RELEASE \
-	CGPathRef oldPath = _maskLayer.path; \
-	if (oldPath) { \
-		_maskLayer.path = nil; \
-		CGPathRelease(oldPath); \
-	}
-
 @implementation MTCircleImageView {
 	CAShapeLayer *_maskLayer;
-}
-
-- (void)dealloc {
-	CHECK_RELEASE;
 }
 
 - (void)updateMask {
@@ -28,8 +17,6 @@
 		_maskLayer = maskLayer;
 		self.layer.mask = maskLayer;
 	}
-	
-	CHECK_RELEASE;
 	
 	CGPathRef newPath = mt_CGPathCreateWithCircleInRect(currentBounds, nil);
 	_maskLayer.path = newPath;
